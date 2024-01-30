@@ -27,3 +27,8 @@ npm i socket.io@2.2.0
 ## Links
 
 [socket.io](https://socket.io/)  
+
+
+## Other branches
+
+[count](https://github.com/brunosantanati/chat-app/tree/count)  
