@@ -21,4 +21,9 @@ node src/index.js
 npm i nodemon@1.18.7 --save-dev
 npm run start
 npm run dev
+npm i socket.io@2.2.0
 ```
+
+## Links
+
+[socket.io](https://socket.io/)  
