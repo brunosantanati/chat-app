@@ -15,10 +15,15 @@ app.use(express.static(publicDirectoryPath))
 io.on('connection', (socket) => {
     console.log('New WebSocket connection')
 
-    socket.emit('message', 'Welcome!')
+    socket.emit('message', 'Welcome!') //socket.emit - emit event to this particular connection
+    socket.broadcast.emit('message', 'A new user has joined!') //socket.broadcast.emit - emit event to all connections but this one
 
     socket.on('sendMessage', (message) => {
-        io.emit('message', message)
+        io.emit('message', message) //io.emit - emit event to all connections
+    })
+
+    socket.on('disconnect', () => {
+        io.emit('message', 'A user has left!')
     })
 })
 
