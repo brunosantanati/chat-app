@@ -30,6 +30,8 @@ npm i bad-words@3.0.0
 [socket.io](https://socket.io/)  
 [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)  
 [bad-words](https://www.npmjs.com/package/bad-words)  
+[Moment.js](https://momentjs.com/)  
+[Moment.js - Display](https://momentjs.com/docs/#/displaying/)  
 
 ## Resources Links
 
