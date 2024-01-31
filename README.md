@@ -36,6 +36,7 @@ npm i bad-words@3.0.0
 ## Resources Links
 
 [chatlibs](http://links.mead.io/chatlibs) ([Gist link](https://gist.github.com/andrewjmead/3e3e310aea27f10f7f1ce506b39dfcbe))  
+[chat assets](http://links.mead.io/chatassets) ([the same as this](https://files.mead.io/35188b9dfb61))  
 
 ## Other branches
 
