@@ -23,6 +23,7 @@ npm run start
 npm run dev
 npm i socket.io@2.2.0
 npm i bad-words@3.0.0
+node src/utils/users.js
 ```
 
 ## Links
