@@ -17,7 +17,7 @@
 
             <div class="compose">
                 <form id="message-form">
-                    <input name="message" placeholder="Message">
+                    <input name="message" placeholder="Message" required autocomplete="off">
                     <button>Send</button>
                 </form>
                 <button id="send-location">Send location</button>
@@ -26,24 +26,24 @@
     </div>
 
     <script id="message-template" type="text/html">
-            <div class="message">
-                <p>
-                    <span class="message__name">Some User Name</span>
-                    <span class="message__meta">{{createdAt}}</span>
-                </p>
-                <p>{{message}}</p>
-            </div>
-        </script>
+        <div class="message">
+            <p>
+                <span class="message__name">{{username}}</span>
+                <span class="message__meta">{{createdAt}}</span>
+            </p>
+            <p>{{message}}</p>
+        </div>
+    </script>
 
     <script id="location-message-template" type="text/html">
-            <div class="message">
-                <p>
-                    <span class="message__name">Some User Name</span>
-                    <span class="message__meta">{{createdAt}}</span>
-                </p>
-                <p><a href="{{url}}" target="_blank">My current location</a></p>
-            </div>
-        </script>
+        <div class="message">
+            <p>
+                <span class="message__name">{{username}}</span>
+                <span class="message__meta">{{createdAt}}</span>
+            </p>
+            <p><a href="{{url}}" target="_blank">My current location</a></p>
+        </div>
+    </script>
 
     <!--
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
