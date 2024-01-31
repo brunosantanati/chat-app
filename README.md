@@ -22,12 +22,14 @@ npm i nodemon@1.18.7 --save-dev
 npm run start
 npm run dev
 npm i socket.io@2.2.0
+npm i bad-words@3.0.0
 ```
 
 ## Links
 
 [socket.io](https://socket.io/)  
 [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)  
+[bad-words](https://www.npmjs.com/package/bad-words)  
 
 ## Other branches
 
