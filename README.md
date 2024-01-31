@@ -31,6 +31,10 @@ npm i bad-words@3.0.0
 [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)  
 [bad-words](https://www.npmjs.com/package/bad-words)  
 
+## Resources Links
+
+[chatlibs](http://links.mead.io/chatlibs) ([Gist link](https://gist.github.com/andrewjmead/3e3e310aea27f10f7f1ce506b39dfcbe))  
+
 ## Other branches
 
 [count](https://github.com/brunosantanati/chat-app/tree/count)  
