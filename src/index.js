@@ -14,11 +14,21 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 
 app.use(express.static(publicDirectoryPath))
 
+//socket.emit - emit event to this particular connection
+//socket.broadcast.emit - emit event to all connections but this one
+//io.emit - emit event to all connections
+//socket.broadcast.to(room).emit - emit event to all connections in the room but this one
+//io.to(room).emit - emit event to all connections in a specific room
+
 io.on('connection', (socket) => {
     console.log('New WebSocket connection')
 
-    socket.emit('message', generateMessage('Welcome!')) //socket.emit - emit event to this particular connection
-    socket.broadcast.emit('message', generateMessage('A new user has joined!')) //socket.broadcast.emit - emit event to all connections but this one
+    socket.on('join', ({ username, room }) => {
+        socket.join(room)
+
+        socket.emit('message', generateMessage('Welcome!'))
+        socket.broadcast.to(room).emit('message', generateMessage(`${username} has joined!`))
+    })
 
     socket.on('sendMessage', (message, callback) => {
         const filter = new Filter()
@@ -27,7 +37,7 @@ io.on('connection', (socket) => {
             return callback('Profanity is not allowed!')
         }
 
-        io.emit('message', generateMessage(message)) //io.emit - emit event to all connections
+        io.to('Center City').emit('message', generateMessage(message))
         callback()
     })
 
