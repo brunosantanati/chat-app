@@ -27,7 +27,7 @@ npm i socket.io@2.2.0
 ## Links
 
 [socket.io](https://socket.io/)  
-
+[geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)  
 
 ## Other branches
 
